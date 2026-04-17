@@ -1,0 +1,1 @@
+# fine-arts-2026-map
