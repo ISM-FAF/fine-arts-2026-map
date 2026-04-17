@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facility Map</title>
+
+  <style>
+    :root {
+      --primary: #df7348;
+      --bg: #17110f;
+      --surface: rgba(39, 27, 23, 0.9);
+      --text: #f7f1ee;
+      --muted: #d6b2a5;
+      --border: rgba(223, 115, 72, 0.25);
+      --shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 20% 10%, rgba(223,115,72,0.15), transparent 30%),
+        linear-gradient(180deg, #18110f, #14100f);
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .header p {
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    .map-container {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 12px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .map-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: rgba(223,115,72,0.15);
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: rgba(223,115,72,0.25);
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrap">
+
+    <div class="header">
+      <h1>Facility Map</h1>
+      <p>Tap to zoom and explore the campus</p>
+    </div>
+
+    <div class="map-container">
+      <!-- CHANGE FILE NAME IF NEEDED -->
+      <img src="grounds-map.png" alt="Facility Map">
+    </div>
+
+    <div class="footer">
+      <a class="btn" href="https://ism-faf.github.io/fine-arts-2026/">Back to Main Hub</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
